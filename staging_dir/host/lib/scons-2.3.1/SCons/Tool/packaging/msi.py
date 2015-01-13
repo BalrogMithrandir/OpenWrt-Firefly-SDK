@@ -475,7 +475,7 @@ def build_wxsfile_header_section(root, spec):
     Product.attributes['Language']     = escape( spec['X_MSI_LANGUAGE'] )
     Package.attributes['Description']  = escape( spec['SUMMARY'] )
 
-    # now the optional tags, for which we avoid the KeyErrror exception
+    # now the optional tags, for which we avoid the KeyError exception
     if 'DESCRIPTION' in spec:
         Package.attributes['Comments'] = escape( spec['DESCRIPTION'] )
 
